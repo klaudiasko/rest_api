@@ -7,7 +7,7 @@ const ENCODING='utf-8';
 const SUCCESS_MESSAGE='success';
 
 router.get('/', (req, res) => {
-    res.send('We are on posts');
+    res.send('Add word');
 });
 
 router.post('/', async (req, res) => {

@@ -10,7 +10,7 @@ const SUCCESS_MESSAGE='success';
 
 router.get('/', async (req, res) => {
     let collection = JSON.parse(fs.readFileSync(FILENAME,ENCODING));
-    reduplication = collection.reduce((b,c)=>((b[b.findIndex(d=>d.el===c)]||b[b.push({el:c,count:0})-1]).count++,b),[]);
+    reduplication = collection.reduce((b,c)=>((b[b.findIndex(d=>d.word===c)]||b[b.push({word:c,count:0})-1]).count++,b),[]);
     console.log(reduplication);
     res.json({message:SUCCESS_MESSAGE,
         reduplication: reduplication});

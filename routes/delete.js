@@ -7,7 +7,7 @@ const ENCODING='utf-8';
 const SUCCESS_MESSAGE='success';
 
 router.get('/', (req, res) => {
-    res.send('We are on delete');
+    res.send('Delete words');
 });
 
 router.post('/', async (req, res) => {
