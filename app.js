@@ -19,7 +19,7 @@ app.use('/unique', uniqueRoute);
 
 //Routes
 app.get('/', (req, res) => {
-    res.send('We are on home');
+    res.send('words rest api');
 });
 
 //listening to the server
